@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Text-animation</title>
+
+    <style>
+      
+
+
+        .container {
+            margin: 20rem;
+            padding: 20px;
+            text-align: center;
+            width: fit-content;
+            border: 2px solid black;
+            justify-content: center;
+            font-size: x-large;
+
+
+        }
+
+       
+        
+
+        span::before {
+            content: "LIFESTYLE";
+            animation: dodo infinite 5s;
+        }
+        @keyframes dodo{
+           0% { 
+            content:"LIFESTYLE" ;
+            background-color: rgb(102, 188, 102)        ;
+             }
+           50% {  
+            content:"WORK" ;
+            background-color: rgb(125, 125, 196)        ;
+            }
+          86%{  
+            content:"EVERYTHING" ;
+            background-color: rgb(200, 117, 117)   ;
+           }
+
+
+
+
+        }
+
+     
+    </style>
+
+</head>
+
+<body>
+    <section class="container">
+        <div id="text1"> MAKE</div>
+        <div id="text2"> <span> </span> </div>
+        <div id="text3"> AWESOME! </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
